@@ -1,0 +1,13 @@
+.video-item {
+    /* The !important property in CSS makes it so that all subsequent
+    styling rules are ignored, (namely the ones applied by semanticUI) */
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+/* Initially, just .video-item img as a selector was not working, so by adding a more specific
+selector, (.video-item.item), we can override the previous styling being applied to the element */
+.video-item.item img {
+    max-width: 180px;
+}
